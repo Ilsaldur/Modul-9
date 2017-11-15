@@ -95,7 +95,7 @@ public class ATM {
 
 	private static void deposit(double amount) {
 		if (amount > 0) {
-			System.out.printf("%s %.2f %s %d \n", "Satt inn", amount, "pÃ¥ konto nr", accounts[id].getId());
+			System.out.printf("%s %.2f %s %d \n", "Satt inn", amount, "på konto nr", accounts[id].getId());
 			accounts[id] = new Account(accounts[id].getId(),
 					(accounts[id].getBalance() + amount));
 			System.out.printf("%s %.2f \n\n", "Ny saldo er", (accounts[id].getBalance()));
